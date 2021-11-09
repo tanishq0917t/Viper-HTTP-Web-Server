@@ -1,0 +1,15 @@
+namespace viper
+{
+class ViperWebServer
+{
+private:
+int portNumber;
+char *url;
+void (*ptrOnRequest)(void); //pointer to a function whose return type is void and has no parameters
+public:
+ViperWebServer(int portNumber);
+~ViperWebServer();
+void onRequest(const char *url,void (*ptrOnRequest)(void));
+void start();
+};
+}
