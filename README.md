@@ -7,3 +7,11 @@ In webone folder you need to create a cpp file which should include viper librar
 #include<viper>
 using namespace viper;
 ```
+For compiling you need to run the command as
+```
+//for linux
+g++ -static file_name.cpp -o file_name.out -I ../vws/include -L ../vws/lib -lviper
+//for winows
+g++ -static file_name.cpp -o file_name.exe -I ../vws/include -L ../vws/lib -lviper -lws2_32
+// -lws2_32 is used for including the libraries required for the socket libraries
+```
