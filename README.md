@@ -23,8 +23,8 @@ server.onRequest("/addStudent",addStudent);   //mapping request with function
 server.onRequest("/getStudent",getStudent);   //mapping request with function
 server.start();                               //Starting the server
 ```
-Whenever a request is arrived at server end, it checked that it is a client side resource or server side resource that means there has to be processing on server side or directly the resouce has to be served.\n
-Such as request arrived for a.jpeg (this is a client side resource, no processing is required) so directly contents of the resource are served.\n
-Request arrived for /addStudent (this is a client side script, that needs to be processed) after processing, necessary actions are taken such as forwarding request to another resource or sending contents of response.\n
+Whenever a request is arrived at server end, it checked that it is a client side resource or server side resource that means there has to be processing on server side or directly the resouce has to be served.\
+Such as request arrived for a.jpeg (this is a client side resource, no processing is required) so directly contents of the resource are served.\
+Request arrived for /addStudent (this is a client side script, that needs to be processed) after processing, necessary actions are taken such as forwarding request to another resource or sending contents of response.\
 Given below is the image of the server application running on terminal.
 ![Alt Text](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/Console%20Screenshot.png?raw=true)
