@@ -1,15 +1,53 @@
+#ifndef __VIPER
+#define __VIPER 12
+#include<iostream>
+#include<map>
+using namespace std;
 namespace viper
 {
+class Request
+{
+public:
+char *method;
+char *resource;
+char isClientSideTechnologyResource;
+char *mimeType;
+int dataCount;
+char **data;
+string forwardTo;
+map<string,string> keyValues;
+void setKeyValue(string key,string value);
+string getValue(string key);
+string get(string name); //to extract data that has arrived in request
+void forward(string forwardTo);
+string decode(string requestURL);
+};
+class Response
+{
+private:
+int clientSocketDescriptor;
+bool isClosed;
+bool headerCreated;
+void createHeader();
+public:
+Response(int clientSocketDescriptor);
+void write(const char *str);
+void write(string str);
+//you need to overload more methods for primitive type
+void closeConnection();
+};
 class ViperWebServer
 {
 private:
 int portNumber;
-char *url;
-void (*ptrOnRequest)(void); //pointer to a function whose return type is void and has no parameters
+//char *url;
+//void (*ptrOnRequest)(Request &,Response &);
+map<string,void (*)(Request &,Response &)> requestMappings;
 public:
 ViperWebServer(int portNumber);
 ~ViperWebServer();
-void onRequest(const char *url,void (*ptrOnRequest)(void));
 void start();
+void onRequest(string url,void(*ptrOnRequest)(Request &,Response &));
 };
 }
+#endif
