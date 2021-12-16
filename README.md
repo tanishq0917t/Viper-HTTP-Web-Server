@@ -23,3 +23,4 @@ server.onRequest("/addStudent",addStudent);   //mapping request with function
 server.onRequest("/getStudent",getStudent);   //mapping request with function
 server.start();                               //Starting the server
 ```
+![Alt Text]https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/Console%20Screenshot.png
