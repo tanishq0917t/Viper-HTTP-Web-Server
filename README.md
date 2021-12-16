@@ -15,3 +15,11 @@ g++ -static file_name.cpp -o file_name.out -I ../vws/include -L ../vws/lib -lvip
 g++ -static file_name.cpp -o file_name.exe -I ../vws/include -L ../vws/lib -lviper -lws2_32
 // -lws2_32 is used for including the libraries required for the socket libraries
 ```
+
+For creating instance of Web Server and starting it
+```
+ViperWebServer server(5050);                  //Creating object
+server.onRequest("/addStudent",addStudent);   //mapping request with function
+server.onRequest("/getStudent",getStudent);   //mapping request with function
+server.start();                               //Starting the server
+```
