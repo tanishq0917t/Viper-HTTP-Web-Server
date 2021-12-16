@@ -31,3 +31,5 @@ Request arrived for **/addStudent** (this is a **server side script**, that need
 \
 Given below is the image of the server application running on terminal.
 ![Alt Text](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/Console%20Screenshot.png?raw=true)
+\
+You can see in the above image, against Client Side Resource: **N** is written, that means it is server side script, which will be processed and all actions will be taken.
