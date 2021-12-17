@@ -33,3 +33,15 @@ Given below is the image of the server application running on terminal.
 ![Alt Text](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/Console%20Screenshot.png?raw=true)
 \
 You can see in the above image, against Client Side Resource: **N** is written, that means it is server side script, which will be processed and all actions will be taken.
+\
+## Demonstration Of Request forwarding feature
+If application developer wants to forward the request to anyother resource (it can be server side or client side resource), he/she has to use forward() function.
+```
+void aaa(Request &request,Response &response)
+{
+//many many lines of code of processing
+request.forward("bbb");
+//or it can be
+// request.forward("abcd.html?x=10");
+}
+```
