@@ -46,8 +46,9 @@ request.forward("bbb");
 }
 ```
 # Demonstration of creating Web Application using Viper Web Server
-###### serverScript.cpp
 This script contains code to add student's details (roll number and name to file using file handling) and get details of student.
+###### serverScript.cpp
+These are the header files and namespaces that are required.
 ```
 #include<viper>
 #include<iostream>
@@ -56,6 +57,9 @@ This script contains code to add student's details (roll number and name to file
 #include<fstream>
 using namespace std;
 using namespace viper;
+```
+This is the student class whose objects will be written in file.
+```
 class Student
 {
 private:
@@ -84,6 +88,9 @@ void getRoll(char *roll)
 strcpy(roll,this->roll);
 }
 };
+```
+This addStudent() function will fetch name and roll number from request string and will create a student object and will write it in a file named **student.dat**
+```
 void addStudent(Request &request,Response &response)
 {
 cout<<"Student Roll Number: "<<request.get("rl")<<endl;
@@ -107,8 +114,9 @@ response.write("</center></body>");
 response.write("</html>");
 response.closeConnection();
 }
-
-
+```
+This getStudent() function will open file named **student.dat** and will create a HTML and will send it using write() function using response pointer.
+```
 void getStudent(Request &request,Response &response)
 {
 ifstream file;
@@ -143,10 +151,16 @@ response.write("</body>");
 response.write("</html>");
 response.closeConnection();
 }
+```
+This aaa() function is used for demonstrating use of forwarding feature
+```
 void aaa(Request &request,Response &response)
 {
 request.forward("getStudent");
 }
+```
+Main function where instance of ViperWebServer is created and request mappings are declared and server is started.
+```
 int main()
 {
 ViperWebServer server(5050);
