@@ -172,11 +172,11 @@ return 0;
 }
 ```
 ## Screenshots
-**index.html**
+**index.html**\
 ![ALT TEXT](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/screenshots/indexPage.png?raw=true)
-**Filling form**
+**Filling form**\
 ![Alt Text](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/screenshots/fillingAddForm.png?raw=true)
-**Notification of Student Added**
+**Notification of Student Added**\
 ![ALT TEXT](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/screenshots/notification.png?raw=true)
-**Get Students (List of students)**
+**Get Students (List of students)**\
 ![ALT TEXT](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/screenshots/getStudents.png?raw=true)
