@@ -179,4 +179,4 @@ return 0;
 **Notification of Student Added**\
 ![ALT TEXT](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/screenshots/notification.png?raw=true)\
 **Get Students (List of students)**\
-![ALT TEXT](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/screenshots/getStudents.png?raw=true)\
+![ALT TEXT](https://github.com/tanishq-17102001/Viper-HTTP-Web-Server/blob/main/EditionOne/webone/screenshots/getStudents.png?raw=true)
