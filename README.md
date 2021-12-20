@@ -3,7 +3,6 @@
   <img src="https://github.com/tanishq-17102001/tanishq-17102001.github.io/blob/main/images/viper.png?" />
   </center>
 </p>
-![ALT TEXT](https://github.com/tanishq-17102001/tanishq-17102001.github.io/blob/main/images/viper.png?raw=true)
 # Viper HTTP Web Server
 Viper is an C++ based HTTP Web Server which can serve static and dynamic web applications. Server side programming should be C/C++, which makes it very interesting.
 # How to use Viper HTTP Web Server
